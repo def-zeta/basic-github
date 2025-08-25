@@ -1,0 +1,44 @@
+reposity ကို local computer ထဲကိုထည့်ပြီး changes ပြုလုပ်ပါမယ်
+
+အဲ့ fileွေကို commit ပြုလုပ်ပါမည်။
+
+commit => staging are => push => reposity
+
+ကျွန်ပ်တို့၏ reposity သည် GitHub ဆိုတဲ့ web hosting platformပေါရောက်ပါတယ်။
+
+version ကြည့်ခြင်ရင်
+
+git --version 
+
+reposity file ကို local computer ထဲကို download လုပ်ခြင်ရင် သူ့ရဲ့ url ကိုသိရပါမယ်။
+
+>>git clone url_name
+
+local reposity ထဲက file ကို remote reposity ထဲကိပြောင်းထည့်ခြင်ရင်
+အရင်ဆုံး local reposity ထဲကိုအရင်သွားဖို့လိုပါတယ်။
+>>cd local_reposity_name
+
+ပြီးရင် သူ့အ‌ခြနေကိုကြည့်ဖို့တွက် 
+
+>>git status
+
+အဲ့ command ကိုရိုက်ထည့်လိုက်တဲ့အခါမှာ ကို့ reposity ထဲမှပြောင်းလဲသွားတဲ့အ‌ခြနေကိဖော်ပြပါတယ်။ အဲ့တာပြီးသွားရင် အဲပြောင်းလဲမှုကိုမှတ်ဖို့တွက် 
+
+>>git add file_name
+
+ဆိုတဲ့ command ကိုရိုက်ထည့်ရပါမယ်။
+
+ပြီးရင် git status နဲ့ပြန်ကြည့်တဲ့အခါမှာ ထို file က commit လုပ်ဖို့တွက်အဆင်သင့်ဘဲဆိုတာကိဖော်ပနေမှာဘဲဖြစ်တယ်။ 
+
+git add ဆိုတဲ့ command ကဘာကိပြောတာလဲဆိုရင် ထိုအသစ်ဖြစ်လာတဲ့ file ကို track လုပ်ပတော့မယ်လို့ git software ကိုအသပေးလိုက်ခြင်းဖြစ်ပါတယ်။
+
+ပြီးရင် track လုပ်ပြီးသား file ကို staging area ကိရောကအောင် commit လုပပေးရပါမယ်။
+
+>>git commit -m "First Commit"
+
+အဲ့နောက်က "First Commit" ဆိုတဲနေရာမှာကြိုက်တဲ့ comman‌ းလိုက်လို့ရပါတယ်။
+အဲ့လို staginf area ကိရောက်သွားတဲ့ file ကို remote reposity ထဲကိရောက်ဖို့ push လုပပေးရပါမယ်။
+
+>>git push -u origin main
+
+အဲ့ command ကိုရိုက်ထည့်လိုက်ပြီဆိုတာနဲ့ sine in  လုပ်ပြီးတာနဲ့ authorize လုပ်ပြိးတာနဲ့ သင့်ရဲ့ remote reposity ကို file ကရောက်ရှိသွားမှာဖြစ်ပါတယ်။
